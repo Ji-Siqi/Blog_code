@@ -1,8 +1,9 @@
 name: Pages
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   pages:
     runs-on: ubuntu-latest
