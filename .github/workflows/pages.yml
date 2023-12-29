@@ -1,8 +1,8 @@
 name: Pages
-on:
-  push:
-    branches:
-      - master
+on: 
+   workflow_dispatch: 
+   schedule:
+      - cron: 0 22 * * *
 jobs:
   pages:
     runs-on: ubuntu-latest
