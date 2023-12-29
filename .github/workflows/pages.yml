@@ -30,7 +30,7 @@ jobs:
     - name: Install hexo dependencies
       env:
         #设置环境变量 仓库私钥， 用来在构建完成后 推送到仓库
-        ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}
+        ACTION_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       run: |
         mkdir -p ~/.ssh/
         echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
